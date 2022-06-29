@@ -16,11 +16,9 @@
 
         <div class="menu"> 
           <span class="logo" href="#">
-            <img class="img1" src="./assets/logo.png" alt="Logo veterinario">
+            <img id="reload" class="img1" src="./assets/logo.png" alt="Logo veterinario">
           </span>
-         
             <img onclick="clique()" class="img2" src="./assets/menu.svg" alt="">
-        
         </div>
 
         <div class="search">
@@ -33,62 +31,65 @@
           </span>
          </div>
 
-         <div class="icones">
+         <div class="icones" onclick="exect()">
           <span>
             <img src="./assets/grid.svg" alt="dashboard">
           </span>
-          <p>Dashboard</p>
+          <p id="dashboard">Dashboard</p>
          </div>
 
-         <div class="icones">
+         <div class="icones" onclick="exect1()">
           <span>
             <img src="./assets/pet.svg" alt="icone de um pata de animal ">
           </span>
-          <p>Pets</p>
+          <p id="pets">Pets</p>
          </div>
 
-         <div class="icones">
+         <div class="icones" onclick="exect2()">
           <span>
             <img src="./assets/user.svg" alt="icone de usuario">
           </span>
-          <p>Clientes</p>
+          <p id="clientes">Clientes</p>
          </div>
 
-         <div class="icones">
+         <div class="icones" onclick="exect3()">
           <span>
             <img src="./assets/vet.svg" alt="icone de veterinario">
           </span>
-          <p>Vets</p>
+          <p id="vets">Vets</p>
          </div>
 
-         <div class="icones">
+         <div class="icones" onclick="exect4()">
           <span>
             <img src="./assets/settings.svg" alt="icone de configurações">
           </span>
-          <p>Ajustes</p>
+          <p id="ajustes">Ajustes</p>
          </div>
       </div>
             
       <div class="exit">
-        <div class="profile">
-          <span >  
-            <img id="photo-profile" src="./assets/avatar.png" alt="imagem de perfil do colaborador">
-          </span>
-          <span class="dados">
-            <p id="name">Eleanor Pena</p>
-            <p id="cargo">Veterinária</p>
-          </span>
+        <div class="exit_content">
+          <div class="profile">
+            <span >  
+              <img id="photo-profile" src="./assets/avatar.png" alt="imagem de perfil do colaborador">
+            </span>
+            <span class="dados">
+              <p id="name">Eleanor Pena</p>
+              <p  id="cargo">Veterinária</p>
+            </span>
+          </div>
+          <div class="logout">
+            <button onclick="sair()" id="ext" type="button"><img src="./assets/log-out.svg" alt=""></button>
+          </div>
         </div>
-        <div class="logout">
-          <button  id="ext" type="button"><img src="./assets/log-out.svg" alt=""></button>
-        </div>
-        
       </div>  
     </section>
 
 
     <main id="content">
-        <div><p>Lucas luiz</p></div>
+        <div>
+          <p id="conteudo">Olá, Seja Bem Vindo</p>
+        </div>
     </main>
     
     <script src="script.js"></script>
